@@ -1,0 +1,16 @@
+Listing ID/Číslo inzerátu/Číslo inzerátu
+Plot space/Plocha pozemku/Plocha pozemku		6828 -3414
+Age/Stáří/Vek								10696 - 5348
+Price per unit/Cena za jednotku/Cena za jednotku  18862 - 9431
+Usable area/Užitná plocha/Úžitková plocha	14448 - 12224
+Total floors/Celkem podlaží/Celkové poschodia 2346 - 1173
+Floor/Podlaží/Poschodie				12766 - 6383
+Condition/Stav/Stav					16532 - 8266
+Plot type/Typ pozemku/Typ pozemku    2792 - 1376
+Location/Umístění/Umiestnenie		9488 - 4744
+Layout/Dispozice/Dispozícia  		12916 - 6458
+EPC/PENB/PENB						9442 - 4721
+Available from/Dostupné od/Dostupné od	12710 - 6355
+
+Fully furnished					10180 - 5090
+Ownership					5830 - 2655
