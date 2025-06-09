@@ -1,0 +1,79 @@
+s1_ExtractAllLinksToTxt
+output_path = RAW_DATA_DIR / "s1_all_listing_links.txt"
+
+s2_FilterActiveInactive #fixed I/O#
+input_links_path = RAW_DATA_DIR / "s1_all_listing_links.txt"
+active_output_path = RAW_DATA_DIR / "s2_active_links_checked.txt"
+inactive_output_log = RAW_DATA_DIR / "s2_inactive_links_log.csv"
+failed_output_log = RAW_DATA_DIR / "s2_failed_links_log.csv"
+
+
+s3_ScrapeAllDataFromLinks
+INPUT_LINKS_FILE = RAW_DATA_DIR / "s2_active_links_checked.txt"
+OUTPUT_FILE = RAW_DATA_DIR / "s3_active_listings_with_prices_and_features.csv"
+FAILED_LOG = RAW_DATA_DIR / "s3_failed_urls.txt"
+
+
+s3b_ResumeScrap
+INPUT_LINKS_FILE = RAW_DATA_DIR / "s2_active_links_checked.txt"
+OUTPUT_FILE = RAW_DATA_DIR / "s3_active_listings_with_prices_and_features.csv"
+FAILED_LOG = RAW_DATA_DIR / "s3_failed_urls_resume.txt"
+
+s4_Filter2InactiveListings
+input_path = PROCESSED_DATA_DIR / "s3_active_listings_with_prices_and_features.csv"
+output_path = PROCESSED_DATA_DIR / "s4_active_cleanable_listings.csv"
+
+s5_CleanPriceAndFinalFilter
+input_file = PROCESSED_DATA_DIR / "s4_active_cleanable_listings.csv"
+output_file = PROCESSED_DATA_DIR / "s5_final_cleaned_listings.csv"
+dropped_log = PROCESSED_DATA_DIR / "s5_dropped_rows_log.csv"
+
+s6a_ParseAndValidateRawChar
+input_file = PROCESSED_DATA_DIR / "s5_final_cleaned_listings.csv"
+output_file = DEBUG_DIR / "s6b_raw_characteristics_parsed_results.csv"
+
+s6b_ExtractStructuredFeatures  
+input_file = DEBUG_DIR / "s6b_raw_characteristics_parsed_results.csv"
+output_file = PROCESSED_DATA_DIR / "s6_engineered_listings.csv"
+
+s6c_AddListingID_viaRawCharacteristics  #fixed# 
+cleaned_file = PROCESSED_DATA_DIR / "s5_final_cleaned_listings.csv"
+engineered_file = PROCESSED_DATA_DIR / "s6_engineered_listings.csv"
+output_file = PROCESSED_DATA_DIR / "s6z_final_cleaned_with_id.csv"
+
+s7_MainExtractCategoryAndLocationFromTitle
+input_file = PROCESSED_DATA_DIR / "s6z_final_cleaned_with_id.csv"
+output_file = PROCESSED_DATA_DIR / "s7_final_cleaned_with_category_location.csv"
+
+s7a_CleanCategoryLocationByID
+input_file = PROCESSED_DATA_DIR / "s7_final_cleaned_with_category_location.csv"
+output_file = PROCESSED_DATA_DIR / "s7a_final_cleaned_with_category_location_cleaned.csv"
+
+s7aa_CleanEngineeredListingsByID
+input_file = PROCESSED_DATA_DIR / "s6_engineered_listings.csv"
+output_file = PROCESSED_DATA_DIR / "s7aa_engineered_listings_cleaned.csv"
+
+s8_final_merged_dataset
+enriched_path = PROCESSED_DATA_DIR / "s7a_final_cleaned_with_category_location_cleaned.csv"
+engineered_path = PROCESSED_DATA_DIR / "s7aa_engineered_listings_cleaned.csv"
+output_path = PROCESSED_DATA_DIR / "final_merged_dataset.csv"
+
+
+
+Irelevant for main structure...
+
+s6a_ScanRawCharacteristicHealth #moved to old folder#
+input_file = DEBUG_DIR / "raw_characteristics_parsed_results.csv"
+output_file = PROCESSED_DATA_DIR / "engineered_listings.csv"
+
+s6A_SearchingForFaultyFormattingOfRawChar #moved to src/utils/tools#
+input_file = PROCESSED_DATA_DIR / "s5_final_cleaned_listings.csv"
+output_file = DEBUG_DIR / "s6A_debug_feature_extraction_50.csv"
+
+s6B_FieldNameFrequencies 	#moved to src/utils/tools#
+input_file = DEBUG_DIR / "s6b_raw_characteristics_parsed_results.csv"
+output_file = PROCESSED_DATA_DIR / "s6B_engineered_listing_field_frequency_debug.csv"
+
+s6f_InspectRawCharacteristics #moved to src/utils/tools#
+input_file = PROCESSED_DATA_DIR / "s5_final_cleaned_listings.csv"
+output_file = RAW_DATA_DIR / "s6f_raw_characteristics_sample.csv"

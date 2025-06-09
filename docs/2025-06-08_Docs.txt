@@ -1,0 +1,142 @@
+# 🧾 Documentation — 2025-06-08
+
+## ✅ Objective:
+
+Finalize the project structure and restore full working versions of `s3` and `s3b` (scraper + resume scraper) while restructuring pathing, input/output naming, and ensuring pipeline compatibility.
+
+---
+
+## 🔁 1. **Global Restructuralization**
+
+### 🗂️ New Folder Layout Standard:
+
+```bash
+ScraperML/
+├── src/
+│   ├── 1_extract/
+│   ├── 2_scrape/
+│   ├── 3_filter_clean/
+│   ├── 6_feature_engineering/
+│   ├── 7_location_category/
+│   └── 8_merge/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── debug/
+├── mappings/
+├── utils/
+│   └── tools/
+├── config.py
+```
+
+* **All I/O moved through `config.py`** constants:
+
+  * `RAW_DATA_DIR`
+  * `PROCESSED_DATA_DIR`
+  * `DEBUG_DIR`
+
+---
+
+## 📥 2. **Input/Output Pathing Rework**
+
+### ✅ All scripts now:
+
+* Use full paths: `RAW_DATA_DIR / "file.csv"`
+* Respect strict input→output flow
+* Save to correct folder:
+
+  * `data/raw/` → for scraped/unprocessed
+  * `data/processed/` → for cleaned, filtered
+  * `data/debug/` → for exploratory / intermediate
+
+### ✅ Output file naming:
+
+Refactored to always reflect **their origin step**:
+
+Examples:
+
+* `s3_active_listings_with_prices_and_features.csv`
+* `s4_active_cleanable_listings.csv`
+* `s6b_field_frequency_debug.csv`
+
+This ensures full **traceability**: when you see a file, you know where it came from.
+
+---
+
+## 🐞 3. **Major Flaws Identified and Solved**
+
+### ❌ Flaw 1: Rewritten `s3` broke parsing logic
+
+* Later versions introduced vague HTML matching
+* Output looked complete but contained **garbage**
+* `"Base Price"` scraped random text
+* `"Raw Characteristics"` were `{}` or invalid JSON
+
+✅ **Fix**: Rewinded to original hand-built version (`beta`) with exact DOM pathing
+
+---
+
+### ❌ Flaw 2: Resume logic failed silently
+
+* URLs were not normalized (`strip()`, `rstrip("/")`)
+* Resume scripts re-scraped everything again
+* No output showed how many listings were skipped
+
+✅ **Fix**:
+
+* Normalization applied to both input + existing URLs
+* Print summary:
+
+  ```
+  🔍 Total: 16842 | ✅ Already scraped: 10420 | 🚧 Remaining: 6422
+  ```
+
+---
+
+### ❌ Flaw 3: Misleading fast scrapes
+
+* A broken `s3` ran "fast" (\~1.5h) because it wasn’t scraping real data
+* Output structure was valid-looking, but unusable in filters (`s4`, `s5`)
+* All prices and characteristics were garbage → filters found "nothing"
+
+✅ **Fix**: Restored original tag-walking parsing logic
+✅ `s4`, `s5`, `s6a`, `s6b` now function properly again
+
+---
+
+## 🛠️ 4. **Final Working Scripts**
+
+| Script                                            | Description                                      |
+| ------------------------------------------------- | ------------------------------------------------ |
+| `s3_ScrapeAllDataFromLinks_restored.py`           | ✅ Full working restored version of main scraper  |
+| `s3b_ResumeScrap_restored.py`                     | ✅ Resume version that skips already scraped URLs |
+| Both use `config.py` and correct output structure |                                                  |
+
+---
+
+## 🔒 5. **Frozen Reference Dataset**
+
+`active_listings_with_prices_and_features_old_working.csv` was used as the **source of truth** for verifying:
+
+* Column order
+* Price and characteristics structure
+* Valid fallback values (`"N/A"`, `"{}"`)
+
+Now restored in output of `s3_restored`.
+
+---
+
+## ✅ Summary of Completed Actions
+
+* ✅ All script folders moved to new structure
+* ✅ I/O pathing and naming standardized
+* ✅ `s3` scraper fully restored from working DOM structure
+* ✅ Resume logic fixed and verified
+* ✅ Pipeline validated: `s3 → s4 → s5 → s6a → s6b` now stable
+* ✅ Garbage output issue diagnosed and prevented
+* ✅ Print-based progress monitoring added
+
+---
+
+
+
