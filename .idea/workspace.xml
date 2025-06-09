@@ -4,123 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="050cee6a-2bf0-47bd-a206-2a9daedcb0df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/old/inactive_links_log.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extras/main_dummy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/1_extract/extra/s2_FilterActiveInactive_dummie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/1_extract/s2_FilterActiveInactive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/extra/s3_ScrapeAllDataFromLinks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/extra/s3_ScrapeAllDataFromLinks_dummie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/extra/s3b_ResumeScrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/extra/s3b_ResumeScrap_dummie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/s3_ScrapeAllDataFromLinks2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2_scrape/s3b_ResumeScrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/3_filter_clean/s4_Filter2InactiveListings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/4_parse_features/s6b_ExtractStructuredFeatures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/4_parse_features/s6c_AddListingID_viaRawCharacteristics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/5_enrich/s7a_CleanCategoryLocationByID.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/5_enrich/s7aa_CleanEngineeredListingsByID.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/tools/s6f_InspectRawCharacteristics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/z_archive/s5b_FinalFilterInactive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/1_exttractingAllLinksToTxt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/3_ScrapingAllDataFromLinksBeta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/s1_ExtractAllLinksTo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/s1_ExtractAllLinksToTxt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/s1_ExtractAllLinksToTxt2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/Features_Layout.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/Features_Layout_refined.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/Title_Dictionary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/active_cleanable_listings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/active_links_only.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/active_listings_with_prices_and_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/cleaned_listings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/debug_feature_extraction_50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/dropped_rows_log.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/engineered_listings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/engineered_listings_cleaned.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/field_key_frequencies.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/filtered_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/final_cleaned_listings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/final_cleaned_with_category_location.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/final_cleaned_with_category_location_cleaned.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/final_cleaned_with_id.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/final_merged_dataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/inactive_links_log.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/listings_clean.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/physically_counted_features.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/raw_characteristics_invalid_sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/raw_characteristics_parsed_results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/raw_characteristics_sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s1_ExtractAllLinksToTxt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s2_FilterActiveInactive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s3_ScrapeAllDataFromLinks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s3b_ResumeScrap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s4_Filter2InactiveListings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s5_CleanPriceAndParseNumber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s5b_FinalFilterInactive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6A_SearchingForFaultyFormattingOfRawChar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6B_FieldNameFrequencies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6Bb_field_aliases.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6_MainFeatureEngineering.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6a_ScanRawCharacteristicHealth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6b_CorrectingFormatOfRawChar_Parsing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6f_InspectRawCharacteristics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s6z_AddListingID_viaRawCharacteristics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s7_MainExtractCategoryAndLocationFromTitle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s7_title_category_map.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s7a_CleanCategoryLocationByID.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s7aa_CleanEngineeredListingsByID.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nový priečinok/s8_final_merged_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScraperML.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s1_ExtractAllLinksToTxt.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_extract/s1_ExtractAllLinksToTxt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s2_FilterActiveInactive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s3_ScrapeAllDataFromLinks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s3b_ResumeScrap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s4_Filter2InactiveListings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s5_CleanPriceAndParseNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/3_filter_clean/s5_CleanPriceAndFinalFilter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s5b_FinalFilterInactive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6A_SearchingForFaultyFormattingOfRawChar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tools/s6A_SearchingForFaultyFormattingOfRawChar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6B_FieldNameFrequencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tools/s6B_FieldNameFrequencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6Bb_field_aliases.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mappings/s6b_field_aliases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6_MainFeatureEngineering.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/z_archive/s6a_ScanRawCharacteristicHealth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6a_ScanRawCharacteristicHealth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6b_CorrectingFormatOfRawChar_Parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/4_parse_features/s6a_ParseAndValidateRawChar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6f_InspectRawCharacteristics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s6z_AddListingID_viaRawCharacteristics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s7_MainExtractCategoryAndLocationFromTitle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/5_enrich/s7_MainExtractCategoryAndLocationFromTitle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s7_title_category_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mappings/s7_title_category_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s7a_CleanCategoryLocationByID.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s7aa_CleanEngineeredListingsByID.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/s8_final_merged_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/6_merge/s8_final_merged_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/debug/debug_feature_extraction_50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/debug_feature_extraction_50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/debug/field_key_frequencies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/field_key_frequencies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/debug/raw_characteristics_invalid_sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/raw_characteristics_invalid_sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/debug/raw_characteristics_parsed_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/raw_characteristics_parsed_results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/active_cleanable_listings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/active_cleanable_listings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/active_listings_with_prices_and_features.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/cleaned_listings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/cleaned_listings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/dropped_rows_log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/dropped_rows_log.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/engineered_listings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/engineered_listings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/engineered_listings_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/engineered_listings_cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/final_cleaned_listings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/final_cleaned_listings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/final_cleaned_with_category_location.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/final_cleaned_with_category_location.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/final_cleaned_with_category_location_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/final_cleaned_with_category_location_cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/final_cleaned_with_id.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/final_cleaned_with_id.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/final_merged_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/final_merged_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/listings_clean.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/listings_clean.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/active_links_only.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/active_links_only.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/active_listings_with_prices_and_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/active_listings_with_prices_and_features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/filtered_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/filtered_links.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/inactive_links_log.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/raw_characteristics_sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/old/raw_characteristics_sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decisions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="050cee6a-2bf0-47bd-a206-2a9daedcb0df" name="Changes" comment="Fully working Scraper" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,12 +109,25 @@
       <workItem from="1749373299756" duration="27550000" />
       <workItem from="1749407376133" duration="6879000" />
       <workItem from="1749447597429" duration="6438000" />
-      <workItem from="1749466008273" duration="3918000" />
+      <workItem from="1749466008273" duration="4323000" />
     </task>
+    <task id="LOCAL-00001" summary="Fully working Scraper">
+      <option name="closed" value="true" />
+      <created>1749471309802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749471309802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fully working Scraper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully working Scraper" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ScraperML$s5_CleanPriceAndFinalFilter.coverage" NAME="s5_CleanPriceAndFinalFilter Coverage Results" MODIFIED="1749460522383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/3_filter_clean" />
